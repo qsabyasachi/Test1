@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Press a key on the keyboard in the input field.</p>
+
+<input type="text" size="40" onkeydown="myFunctiondown(event)" onkeyup="myFunctionup(event)" onkeypress="myFunctionpress(event)">
+
+<p id="demo"></p>
+
+<script>
+function myFunctiondown(event) {
+  var x = event.key;
+  document.getElementById("demo").innerHTML = "The down key was: " + event.key;
+}
+function myFunctionup(event) {
+  var x = event.key;
+  document.getElementById("demo").innerHTML = "The up key was: " + event.key;
+}
+function myFunctionpress(event) {
+  var x = event.key;
+  document.getElementById("demo").innerHTML = "The pressed key was: " + event.key;
+}
+</script>
+
+</body>
+</html>
